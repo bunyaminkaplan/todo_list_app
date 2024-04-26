@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block content%}    
+    <div class="grid-container">
+        {% for mission in missions %}
+            <div class="grid-item">
+                <div class="card" style="width: 22rem; margin: 1rem;">
+                    <div class="card-body">
+                        <!--<h5 class="card-title">{{mission.title}}</h5>-->
+                        
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-dark" data-bs-toggle="collapse" href="#{{mission.id}}" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" style="margin-left: 1.5rem;">{{mission.title}}</a>
+                        </p>
+                          
+                          
+                          <div class="row">
+                            <div class="col">
+                              <div class="collapse multi-collapse" id="{{mission.id}}">
+                                <div class="card card-body" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 0.5rem; box-shadow: none; background-color: rgb(129, 178, 154); background-image: none; ">
+                                  <p class="index_test">{{mission.index}}</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        
+                        <!--<p class="card-text" style="outline: auto; outline-style: dashed; border-radius: 0.3rem; padding-left: 5px; padding-right: 5px;">{{mission.index}}</p>-->
+                        <p class="card-text">{{mission.time}} days you gave</p>
+                        <p class="card-text">and you have {{mission.remained_days}} day(s)</p>
+                        <a href="{% url 'app_todo:done' id=mission.id %}" class="btn btn-success">Done!</a>
+                    </div>
+                </div>
+            </div>
+        {%endfor%}
+    </div>
+
+    
+{% endblock %}
+
+
+

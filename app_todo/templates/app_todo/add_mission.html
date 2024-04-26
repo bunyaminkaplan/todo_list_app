@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static%}
+{%block content%}
+    
+    
+    <div style="margin: 10%; " >
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="grid-container">
+               
+                <span class="grid-item"><div class="mb-3">
+                    <label for="title" class="form-label">Mission Title</label>
+                    <input type="text" class="form-control" id="title" name="title" maxlength="25" >
+                </div></span>
+                
+                <br>
+                
+                <span class="grid-item"><div class="mb-3">
+                    <label for="mission_index" class="form-label" style="margin-left: 2rem;" >Mission Index</label>
+                    <textarea class="form-control" id="mission_index" name="mission_index" maxlength="255" rows="5" ></textarea>
+                </div></span>
+                
+
+            </div>
+    
+
+        <div class="container" style="align-items: center; width: auto; margin-left: 10rem;">
+            <label for="mission_time" class="form-label">Mission Time</label>
+            <input id="mission_time" type="range" min="1" max="15" name="mission_time" step="1" list="marker" value="5">
+           
+
+            <datalist id="markers" >     
+                
+                {% for time_value in time_value_list %}
+                
+                    <option value="{{time_value}}" label=" -{{time_value}}" ></option>
+                
+                {% endfor %}
+            </datalist>
+
+        </div>
+                
+            
+            <br>
+
+            <span class="create_button"><button type="submit" class="btn btn-primary">Create</button></span>
+        </form>
+    </div>
+
+{% endblock %}

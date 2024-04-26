@@ -1,0 +1,257 @@
+
+
+#mission_time::-webkit-slider-thumb {
+    
+    -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+ 
+
+  background-color: black;
+}
+  
+
+
+#mission_time {
+
+    appearance: none;
+    width: 70%;
+    height: 0.7rem;
+    background-color: rgb(242, 204, 143);
+    border-radius: 1rem; 
+    margin-inline: 3rem;
+
+}
+
+#mission_time::-webkit-slider-runnable-track {
+
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: 2px black;
+    background: transparent;
+    width: 70%;
+}
+
+#markers {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode:vertical-lr;
+    width: 72.91%;
+    margin-left: 2.8rem;
+    margin-top: 5px;
+}
+
+option {
+
+    margin-inline: auto;
+    
+}
+
+.time_view {
+
+    width:8.17rem;
+    background-color: rgb(242, 204, 143);
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.grid-container {
+   
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: rgb(244, 241, 222);
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-auto-columns: auto;
+    
+    padding: 10px;
+  }
+
+
+.card {
+
+    /*box-shadow: 10px 10px rgb(242, 204, 143);*/
+    background-color: black;
+    background-blend-mode: normal;
+}
+
+
+.card-text {
+
+    border-radius: 1rem;
+    padding: 0.6rem;
+    outline: auto;
+    outline-color: rgb(95, 95, 95);
+    outline-style:groove;
+    width: 15rem;
+    margin-left: 3rem;
+
+}
+
+.card-body {
+
+    background-image: radial-gradient(circle at center , rgb(242, 204, 143) 75%, rgb(244, 241, 222) 25%);
+    /*background-color: rgb(242, 204, 143); */
+    
+    
+
+}
+
+#time {
+
+    text-align: center;
+    font-size:  50px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    margin-left: 5rem; 
+    margin-right: auto; 
+    width: 12.5rem ; 
+    height: max-content; 
+    padding-left: 0.7rem; 
+    padding-right: 0.7rem; 
+    border-radius: 1rem;
+    box-shadow: 5px 5px;
+}
+
+#date {
+
+    margin-left: 35rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:normal;
+    font-size: 40px;
+    text-shadow: 1.5px 1.5px white;
+    
+}
+
+
+
+.index_test {
+
+
+    color: white;
+    text-align: justify;
+
+}
+
+
+
+.btn-success {
+
+    margin-left: 18rem;
+    box-shadow: 3px 3px rgb(61, 64, 91);  
+    color: white;
+    --bs-btn-color: rgb(255, 255, 255);
+    --bs-btn-bg:  rgb(129, 178, 154) ;
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: rgb(141, 178, 154);
+    
+}
+
+.btn-dark {
+    box-shadow: 3px 3px rgb(129, 178, 154);
+  --bs-btn-color: rgb(255, 255, 255);
+  --bs-btn-bg: rgb(61, 64, 91);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: rgb(255, 255, 255);
+  --bs-btn-hover-bg: rgb(73, 64, 91);
+  
+
+}
+
+
+
+
+.form-label {
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: rgb(61, 64, 91);;
+    text-shadow: 2px 2px rgb(242, 204, 143) ;
+
+}
+
+
+#mission_index {
+
+    background-color: rgb(242, 204, 143); 
+    outline: rgb(61, 64, 91);
+    border-color: rgb(61, 64, 91);
+    
+}
+
+
+#title { 
+
+    background-color: rgb(242, 204, 143); 
+    outline: rgb(61, 64, 91);
+    border-color: rgb(61, 64, 91);
+
+}
+
+
+.btn-primary {
+    
+    align-items: center ;
+    width: 7rem;
+    margin-inline: 45%;
+    box-shadow: 3px 3px  rgb(242, 204, 143);
+  --bs-btn-color: rgb(255, 255, 255);
+  --bs-btn-bg: rgb(61, 64, 91);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: rgb(255, 255, 255);
+  --bs-btn-hover-bg: rgb(73, 64, 91);
+  
+
+}
+
+
+#navbarCollapse {
+
+    background-color:  rgb(61, 64, 91);
+    color:  rgb(61, 64, 91);
+}
+
+
+.navbar {
+
+    --bs-navbar-padding-y: 0px;
+
+}
+
+#input_info {
+
+    appearance: none;  
+    outline: auto;
+    border-color: purple;  
+    background-color: purple;
+}
+
+
+.signup_inputs {
+
+    appearance: none;
+    
+
+}
+
+
+#welcome_message {
+
+    margin-top: 4rem;
+    text-align: center;
+    margin-inline: 10rem;
+    color: rgb(61, 64, 91);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#welcome_message_box {
+    
+    margin-top: 7rem;
+    align-items: center;
+    width: 100%;
+
+}
